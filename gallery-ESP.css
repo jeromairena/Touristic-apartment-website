@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Glass Antiqua', monospace;
+}
+
+body{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(https://multimedia.andalucia.org/media/30C5694873514DF5BFE17164EAF1B940/img/6579727AE9E04C3F9D54CF4E656A8669/1637326181018Foto_puente_14_00311996055062580443111.jpg?responsive);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #efb810;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transition: width 0.5s ease, height 0.5s ease;
+    position: relative;
+}
+
+/*----------CARRUSEL DE IMÁGENES 1---------*/
+.primero{
+    display: flex;
+    position: relative;
+}
+.segundo{
+    display: flex;
+    position: relative;
+}
+.primero .todo{
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+}
+.segundo .todo1{
+    margin-top: 100px;
+    margin-right: 100px;
+    position: relative;
+}
+.envuelvetodo1{
+    margin-top: 110px;
+    position: relative;
+}
+.envuelvetodo{
+    margin-top: 110px;
+    position: relative;
+}
+.container-carousel{
+    margin-top: 100px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.carruseles{
+    width: 1000%;
+    height: 100%;
+    display: flex;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.slider-section{
+    width: calc(100% / 10);
+    height: 100%;
+}
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-right{
+    right: 10px;
+    color: black;
+}
+.btn-left{
+    left: 10px;
+    color: black;
+}
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #333333d4;
+    color: rgb(255, 255, 255);
+}
+
+
+/*----------CARRUSEL DE IMÁGENES 2---------*/
+.container-carousel1{
+    margin-top: 100px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.carruseles1{
+    width: 1000%;
+    height: 100%;
+    display: flex;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.slider-section1{
+    width: calc(100% / 10);
+    height: 100%;
+}
+.slider-section1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.btn-left1,
+.btn-right1 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-right1{
+    right: 10px;
+    color: black;
+}
+.btn-left1{
+    left: 10px;
+    color: black;
+}
+.btn-left1:hover,
+.btn-right1:hover{
+    background-color: #333333d4;
+    color: rgb(255, 255, 255);
+}
+
+/*----------DROPDOWN MENUS 1----------*/
+.dropdown1{
+    display: inline-block;
+    margin-top: 10px;
+    height: 60px;
+    position: relative;
+}
+.dropdown1 button{
+    background-color: #efb810;
+    color: #000000;
+    padding: 5px 20px;  
+    font-size: 20px;  
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+}
+.dropdown1 a{
+    display: block;
+    color: #efb810;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.dropdown1 .content1{
+    background: black;
+    position: absolute;
+    box-shadow: 2px 2px 5px #252525;
+    display: none;
+    width: 250px;
+    z-index: 999;
+}
+.dropdown1:hover .content1{
+    display: block;
+}
+.dropdown1:hover button{
+    background-color: #b88e0e;
+}
+.dropdown1 a:hover{
+    background: #252525;
+}
+
+/*----------DROPDOWN MENUS 2----------*/
+.dropdown2{
+    display: inline-block;
+    margin-top: 10px;
+    height: 60px;
+    position: relative;
+}
+.dropdown2 button{
+    background-color: #efb810;
+    color: #000000;
+    padding: 5px 20px;  
+    font-size: 20px;  
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+}
+.dropdown2 a{
+    display: block;
+    color: #efb810;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.dropdown2 .content2{
+    background: black;
+    position: absolute;
+    box-shadow: 2px 2px 5px #252525;
+    display: none;
+    width: 250px;
+    z-index: 999;
+}
+.dropdown2:hover .content2{
+    display: block;
+}
+.dropdown2:hover button{
+    background-color: #b88e0e;
+}
+.dropdown2 a:hover{
+    background: #252525;
+}
+
+/*----------LOS DESCALZOS - ÁNGEL H1----------*/
+.losdescalzos{
+    position: relative;
+}
+.losdescalzos h1{
+    margin-top: 55px;
+    border-bottom: 1px solid #efb810;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/*----- BARRA DE NAVEGACIÓN Y RESTO DEL CÓDIGO-----*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 4em;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #efb810;
+    font-size: 1.75rem;
+}
+
+.nav-links li a:hover{
+    color: #ffffff;
+}
+
+.register-btn{
+    background: #efb810;
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.75rem;
+    margin-top: 0px;
+}
+
+.register-btn:hover{
+    color: #ffffff;
+    scale: 1.15;
+}
+
+.navbar-white{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: sticky;
+}
+.navbar-white .fa-bars{
+    display: none;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    background: #efb810;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+.dropdown{
+    display: none;
+    margin-top: 30px;
+    height: 60px;
+    margin-left: 134px;
+    position: relative;
+    
+}
+.dropdown button{
+    background-color: #efb810;
+    color: #000000;
+    padding: 5px 20px;  
+    font-size: 20px;  
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: #efb810;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.dropdown .content{
+    background: black;
+    position: absolute;
+    box-shadow: 2px 2px 5px #252525;
+    display: none;
+    width: 400px;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 469px){
+    .dropdown .content{
+        width: 250px;
+        margin-left: -55px;
+    }
+    .dropdown button{
+        margin-left: -55px;
+    }
+}
+@media only screen and (max-width: 660px){
+    .losdescalzos h1{
+        text-align: center;
+    }
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: #b88e0e;
+}
+.dropdown a:hover{
+    background: #252525;
+}
+
+/*-----FOOTER-----*/
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 105px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #efb810;
+    font: 22px;
+    margin: 0 10px;
+
+}
+
+.footer hr{
+    background: #efb810;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0px;
+}
+
+.footer p{
+    padding-bottom: 15px;
+}
+
+/*#######################################
+  ##########-DISEÑO RESPONSIVO-##########
+  #######################################*/
+
+/*-----MEDIA-----*/
+@media only screen and (max-width: 1250px){
+    .container{
+        display: initial;
+    }
+    .primero{
+        justify-content: center;
+    }
+    .segundo{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    /*-----PRIMERO-----*/
+    .primero{
+        display: initial;
+    }
+    .container-carousel{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .primero .todo{
+        margin-left: 0;
+        margin-top: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .envuelvetodo{
+        margin-top: 0;
+    }
+    
+
+    /*-----SEGUNDO-----*/
+    .segundo{
+        flex-direction: column-reverse;
+    }
+    .segundo .todo1{
+        margin-right: 0;
+        margin-top: 0;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .envuelvetodo1{
+        margin-top: 0;
+    }
+    .container-carousel1{
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 420px){
+    .container-carousel{
+        width: 275px;
+        height: auto;
+    }
+    .container-carousel1{
+        width: 275px;
+        height: auto;
+    }
+}
+
+
+/*-----BARRA DE NAVEGACIÓN DISEÑO RESPONSIVO-----*/
+@media only screen and (max-width: 1100px){
+    .navbar-white .logo{
+        position: fixed;
+        top: 2%;
+        left: 2%;
+        width: 200px;
+    }
+    .navbar-white{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 120%; /* Ajusta el ancho según sea necesario */
+        padding: 80px 10% 0; /* Ajusta el padding según sea necesario */
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        margin-left: -20%; /* Ajusta el margen según sea necesario */
+    }
+    .navbar-white .nav-links li{
+        margin: 20px 0;
+        display: block;
+        width: 100%;
+    }
+    .navbar-white .nav-links li a{
+        color: #ffffff;
+    }
+    .navbar-white .register-btn{
+        margin: 15px -10px 30px;
+        display: inline-block;
+    }
+    .navbar-white .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 5%;
+        color: #ffffff;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .active::after{
+        left: -60%;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+    .hidemenu{
+        max-height: 500px;
+    }
+    .dropdown{
+        margin-top: 130px;
+        margin-left: 50px;
+        display: block;
+    }
+}
+
+/*------ANIMACIÓN-----*/
+[data-animation="fade"] {
+    opacity: 0;
+    transform: translate(100%);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: translate(0);
+}
+[data-animation="show"] {
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: scale(1);
+}
+[data-animation="up"] {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: translateY(0);
+}
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
+

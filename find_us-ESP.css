@@ -1,0 +1,1237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Glass Antiqua', monospace;
+}
+
+body{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(https://multimedia.andalucia.org/media/30C5694873514DF5BFE17164EAF1B940/img/6579727AE9E04C3F9D54CF4E656A8669/1637326181018Foto_puente_14_00311996055062580443111.jpg?responsive);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 4em;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #efb810;
+    font-size: 1.75rem;
+}
+
+.nav-links li a:hover{
+    color: #ffffff;
+}
+
+.register-btn{
+    background: #efb810;
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+.register-btn:hover{
+    color: #ffffff;
+    scale: 1.15;
+}
+.navbar-white{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: sticky;
+}
+.navbar-white .fa-bars{
+    display: none;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    background: #efb810;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+.dropdown{
+    display: inline-block;
+    margin-top: 30px;
+    height: 60px;
+    margin-left: 134px;
+    position: relative;
+}
+.dropdown button{
+    background-color: #efb810;
+    color: #000000;
+    padding: 5px 20px;  
+    font-size: 20px;  
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: #efb810;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.dropdown .content{
+    background: black;
+    position: absolute;
+    box-shadow: 2px 2px 5px #252525;
+    display: none;
+    width: 200px;
+    z-index: 999;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: #b88e0e;
+}
+.dropdown a:hover{
+    background: #252525;
+}
+
+/*-----INTERACTIVE MAP-----*/
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.figura{
+    position: relative;
+    height: 500px;
+    width: 1440px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    margin-top: 53px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.figura img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+
+}
+.figura .capa4{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(239, 184, 16, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.figura:hover > .capa4{
+    opacity: 1;
+    visibility: visible;
+}
+.figura:hover > img{
+    transform: scale(1.3);
+}
+.figura:hover > .capa4 h2{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+.figura .capa4 h2{
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    font-size: 45px;
+}
+.figura .capa4 p{
+    font-size: 25px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/*-----LOCATION-----*/
+.location{
+    margin-left: 30px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    height: 500px;
+    position: relative;
+}
+.location .first-part{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.figura1{
+    position: relative;
+    height: 411px;
+    width: 600px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    margin-top: 53px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.figura1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.figura1 .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(239, 184, 16, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.figura1:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.figura1:hover > img{
+    transform: scale(1.3);
+}
+.figura1:hover > .capa h2{
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+.figura1 .capa h2{
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    font-size: 45px;
+}
+.figura1 .capa p{
+    font-size: 25px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+.location hr{
+    margin-bottom: 10px;
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 1px solid #efb810; /* Crea una línea de 1px de grosor */
+    width: 100%;
+}
+.losdescalzos{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.losdescalzos h3{
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #efb810;
+}
+.losdescalzos .mapa-1{
+    text-align: center;
+    margin-top: 20px;
+}
+.losdescalzos .mapa-1 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+.losdescalzosangel{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.losdescalzosangel h3{
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #efb810;
+}
+.losdescalzosangel .mapa-2{
+    text-align: center;
+    margin-top: 20px;
+}
+.losdescalzosangel .mapa-2 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+
+/*-----PARKING-----*/
+.parking{
+    margin-left: 30px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    position: relative;
+    color: #efb810;
+}
+.parking .second-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.figura2{
+    position: relative;
+    height: 411px;
+    width: 600px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    margin-top: 53px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.figura2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.figura2 .capa1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(239, 184, 16, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.figura2:hover > .capa1{
+    opacity: 1;
+    visibility: visible;
+}
+.figura2:hover > img{
+    transform: scale(1.3);
+}
+.figura2:hover > .capa1 h2{
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+.figura2 .capa1 h2{
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    color: #000;
+    font-size: 45px;
+}
+.figura2 .capa1 p{
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    color: #000;
+    font-size: 25px;
+}
+.losdescalzos1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.losdescalzos1 h3{
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.losdescalzos1 .mapa-1{
+    text-align: center;
+    margin-top: 20px;
+}
+.losdescalzos1 .mapa-1 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+.losdescalzosangel1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.losdescalzosangel1 h3{
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.losdescalzosangel1 .mapa-2{
+    text-align: center;
+    margin-top: 20px;
+}
+.losdescalzosangel1 .mapa-2 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+
+/*-----TRANSPORT-----*/
+.transport{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    position: relative;
+    color: #efb810;
+}
+.transport .explicacion p{
+    font-size: 20px;
+}
+.transport hr{
+    margin-bottom: 10px;
+    border: none; /* Elimina el borde predeterminado */
+    border-top: 1px solid #efb810; /* Crea una línea de 1px de grosor */
+    width: 100%;
+}
+.transport .third-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.third-part-junior{
+    display: flex;
+    flex-direction: column;
+}
+.third-part-junior-junior{
+    display: flex;
+}
+.transport .figura3{
+    position: relative;
+    height: 411px;
+    width: 600px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 44px;
+}
+.figura3 img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.figura3 .capa2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(239, 184, 16, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.figura3:hover > .capa2{
+    opacity: 1;
+    visibility: visible;
+}
+.figura3:hover > img{
+    transform: scale(1.3);
+}
+.figura3:hover > .capa2 h2{
+    margin-top: 45px;
+    margin-bottom: 15px;
+    
+}
+.figura3 .capa2 h2{
+    font-weight: 600;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+    color: #000;
+    font-size: 45px;
+}
+.figura3 .capa2 p{
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    color: #000;
+    font-size: 25px;
+}
+.transport .taxi{
+    margin-left: 30px;
+}
+.transport .taxi .mapa-1{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.transport .taxi .mapa-1 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+.taxi h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+.transport .bus{
+    padding-left: 20px;
+}
+.transport .bus .mapa-2{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.transport .bus .mapa-2 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+.bus h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 25px;
+}
+.transport .train{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.transport .train .mapa-3{
+    text-align: center;
+    margin-top: 10px;
+}
+.transport .train .mapa-3 iframe{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 6px;
+}
+.train h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*-----FOOTER-----*/
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 105px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #efb810;
+    font: 22px;
+    margin: 0 10px;
+
+}
+
+.footer hr{
+    background: #efb810;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0px;
+}
+
+.footer p{
+    padding-bottom: 15px;
+    color: #efb810;
+}
+
+/*-----MEDIA-----*/
+
+@media only screen and (max-width: 1060px){
+    .navbar-white .logo{
+        position: fixed;
+        top: 2%;
+        left: 10%;
+        width: 200px;
+    }
+    .navbar-white{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 120%; /* Ajusta el ancho según sea necesario */
+        padding: 80px 10% 0; /* Ajusta el padding según sea necesario */
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        margin-left: -20%; /* Ajusta el margen según sea necesario */
+    }
+    .navbar-white .nav-links li{
+        margin: 20px 0;
+        display: block;
+        width: 100%;
+    }
+    .navbar-white .nav-links li a{
+        color: #ffffff;
+    }
+    .navbar-white .register-btn{
+        margin: 15px -10px 30px;
+        display: inline-block;
+    }
+    .navbar-white .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 5%;
+        color: #ffffff;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .active::after{
+        left: -60%;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+    .hidemenu{
+        max-height: 500px;
+    }
+    .dropdown{
+        margin-top: 130px;
+        margin-left: 50px;
+    }
+}
+
+
+/*------LA BUENA-----*/
+
+@media only screen and (max-width: 1200px){
+    .figura{
+        width: 1045px;
+        height: 366.17px;
+    }
+    .figura .capa4 h2{
+        font-weight: 600;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out;
+        margin-top: 30px;
+    }
+    .figura .capa4 p{
+        font-size: 25px;
+        max-width: 700px;
+    }
+    .figura:hover > .capa4 h2{
+        margin-top: 45px;
+    }
+
+    /*-----LOCATION-----*/
+    .figura1{
+        width: 400px;
+        height: 277.2px;
+    }
+    .figura1:hover > .capa h2{
+        margin-top: 45px;
+    }
+    .figura1 .capa h2{
+        font-size: 25px;
+    }
+    .figura1 .capa p{
+        font-size: 20px;
+        max-width: 350px;
+    }
+    .location{
+        height: 380px;
+    }
+    .location .losdescalzos .mapa-1 iframe{
+        width: 300px;
+        height: 277.2px;
+    }
+    .location .losdescalzosangel .mapa-2 iframe{
+        width: 300px;
+        height: 277.2px;
+    }
+
+    /*-----PARKING-----*/
+    .figura2{
+        width: 400px;
+        height: 278px;
+    }
+    .figura2:hover > .capa1 h2{
+        margin-top: 42px;
+    }
+    .figura2 .capa1 h2{
+        font-size: 25px;
+    }
+    .figura2 .capa1 p{
+        max-width: 350px;
+        font-size: 20px;
+    }
+    .parking .losdescalzos1 .mapa-1 iframe{
+        width: 300px;
+        height: 278px;
+    }
+    .losdescalzos1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .losdescalzosangel1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .parking .losdescalzosangel1 .mapa-2 iframe{
+        width: 300px;
+        height: 278px;
+    }
+
+    /*-----TRANSPORT-----*/
+    .transport .figura3{
+        width: 400px;
+        height: auto;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 30px;
+    }
+    .figura3 .capa2 h2{
+        font-size: 25px;
+    }
+    .figura3 .capa2 p{
+        max-width: 350px;
+        font-size: 20px;
+    }
+    .transport .taxi .mapa-1 iframe{
+        width: 285px;
+        height: 300px;
+    }
+    .transport .bus .mapa-2 iframe{
+        width: 285px;
+        height: 300px;
+    }
+    .transport .train .mapa-3 iframe{
+        width: 600px;
+        height: 300px;
+    } 
+    .transport .taxi .mapa-1{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+    .figura{
+        width: 700px;
+        height: 246.38px;
+    }
+    .figura .capa4 h2{
+        font-weight: 600;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .figura .capa4 p{
+        font-size: 18px;
+        max-width: 500px;
+    }
+    .figura:hover > .capa4 h2{
+        margin-top: 20px;
+    }
+
+    /*-----LOCATION-----*/
+    .figura1{
+        width: 250px;
+        height: 174.49px;
+    }
+    .figura1:hover > .capa h2{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .figura1 .capa h2{
+        font-size: 20px;
+    }
+    .figura1 .capa p{
+        font-size: 15px;
+        max-width: 230px;
+    }
+    .location{
+        height: 250px;
+    }
+    .location .losdescalzos .mapa-1 iframe{
+        width: 200px;
+        height: 171.16px;
+    }
+    .location .losdescalzosangel .mapa-2 iframe{
+        width: 200px;
+        height: 171.16px;
+    }
+
+    /*-----PARKING-----*/
+    .figura2{
+        width: 250px;
+        height: 175px;
+    }
+    .figura2:hover > .capa1 h2{
+        margin-top: 13px;
+        margin-bottom: 5px;
+    }
+    .figura2 .capa1 h2{
+        font-size: 20px;
+    }
+    .figura2 .capa1 p{
+        font-size: 15px;
+        max-width: 240px;
+    }
+    .parking .losdescalzos1 .mapa-1 iframe{
+        width: 200px;
+        height: 171.16px;
+    }
+    .losdescalzos1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .losdescalzosangel1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .parking .losdescalzosangel1 .mapa-2 iframe{
+        width: 200px;
+        height: 171.16px;
+    }
+
+    /*-----TRANSPORT-----*/
+    .transport .figura3{
+        width: 292px;
+        height: auto;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 14px;
+        margin-bottom: 5px;
+    }
+    .transport .taxi .mapa-1 iframe{
+        width: 185px;
+        height: 156.25px
+    }
+    .transport .bus .mapa-2 iframe{
+        width: 185px;
+        height: 156.25px
+    }
+    .transport .train .mapa-3 iframe{
+        width: 390px;
+        height: 156.25px
+    } 
+    .transport .taxi .mapa-1{
+        margin-right: 0px;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 10px;
+    }
+    .figura3 .capa2 h2{
+        font-size: 20px;
+    }
+    .figura3 .capa2 p{
+        font-size: 15px;
+        max-width: 240px;
+    }
+}
+
+@media only screen and (max-width: 725px){
+    .figura{
+        width: 535px;
+        height: 189.09px;
+    }
+    .figura .capa4 h2{
+        font-weight: 600;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .figura .capa4 p{
+        font-size: 15px;
+        max-width: 450px;
+    }
+    .figura:hover > .capa4 h2{
+        margin-top: 25px;
+        margin-bottom: 7px;
+    }
+
+    /*-----UBICACIÓN-----*/
+    .figura1{
+        width: 200px;
+        height: 140.26px;
+    }
+    .figura1:hover > .capa h2{
+        margin-top: 17px;
+    }
+    .figura1 .capa h2{
+        font-size: 15px;
+    }
+    .figura1 .capa p{
+        font-size: 12px;
+        max-width: 190px;
+    }
+    .location{
+        height: 200px;
+    }
+    .location .losdescalzos .mapa-1 iframe{
+        width: 150px;
+        height: 136.93px;
+    }
+    .location .losdescalzosangel .mapa-2 iframe{
+        width: 150px;
+        height: 136.93px;
+    }
+    .losdescalzos h3{
+        font-size: 18px;
+    }
+    .losdescalzosangel h3{
+        font-size: 18px;
+    }
+
+    /*----- SEGUNDA PARTE-----*/
+    .figura2{
+        width: 200px;
+        height: 140.66px;
+    }
+    .figura2:hover > .capa1 h2{
+        margin-top: 10px;
+    }
+    .figura2 .capa1 h2{
+        font-size: 15px;
+    }
+    .figura2 .capa1 p{
+        font-size: 12px;
+        max-width: 190px;
+    }
+    .parking .losdescalzos1 .mapa-1 iframe{
+        width: 150px;
+        height: 140.67px;
+    }
+    .losdescalzos1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .losdescalzos1 h3{
+        font-size: 18px;
+    }
+    .losdescalzosangel1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .losdescalzosangel1 h3{
+        font-size: 18px;
+    }
+    .parking .losdescalzosangel1 .mapa-2 iframe{
+        width: 150px;
+        height: 140.67px;
+    }
+
+    /*-----TERCERA PARTE-----*/
+    .transport .figura3{
+        width: 200px;
+        height: auto;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 14px;
+    }
+    .transport .taxi .mapa-1 iframe{
+        width: 140px;
+        height: 125px;
+    }
+    .taxi h3{
+        font-size: 18px;
+    }
+    .transport .bus .mapa-2 iframe{
+        width: 140px;
+        height: 125px;
+    }
+    .bus h3{
+        font-size: 18px;
+    }
+    .transport .train .mapa-3 iframe{
+        width: 300px;
+        height: 125px;
+    } 
+    .train h3{
+        font-size: 18px;
+    }
+    .transport .taxi .mapa-1{
+        margin-right: 0px;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 13px;
+    }
+    .figura3 .capa2 h2{
+        font-size: 15px;
+    }
+    .figura3 .capa2 p{
+        font-size: 11px;    
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .footer{
+        padding: 0 50;
+    }
+}
+
+@media only screen and (max-width: 585px){
+    .footer{
+        padding: 0 50;
+    }
+    .figura{
+        width: 300px;
+        height: 107.5px;
+        
+    }
+    .figura .capa4 h2{
+        font-weight: 600;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .figura .capa4 p{
+        font-size: 8px;
+        max-width: 250px;
+    }
+    .figura:hover > .capa4 h2{
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .location .first-part{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .location .first-part{
+        display: initial;
+    }
+    .location{
+        height: 600px;
+    }
+    /*-----PRIMERA PARTE-----*/
+    .figura1{
+        width: 300px;
+        height: 208.72px;
+    }
+    .figura1:hover > .capa h2{
+        margin-top: 35px;
+    }
+    .figura1 .capa h2{
+        font-size: 22px;
+    }
+    .figura1 .capa p{
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 250px;
+    }
+    .location{
+        height: 730px;
+        margin-top: 20px;
+        background:  rgba(202, 202, 202, 0.3);
+        border-radius: 6px;
+    }
+    .location .losdescalzos{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .location .losdescalzos .mapa-1 iframe{
+        width: 300px;
+        height: 136.93px;
+    }
+    .location .losdescalzosangel{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .location .losdescalzosangel .mapa-2 iframe{
+        width: 300px;
+        height: 136.93px;
+    }
+    .losdescalzos h3{
+        font-size: 18px;
+    }
+    .losdescalzosangel h3{
+        font-size: 18px;
+    }
+    /*-----SECOND PART-----*/
+    .parking{
+        margin-top: 20px;
+        background:  rgba(202, 202, 202, 0.3);
+        border-radius: 6px;
+        padding-bottom: 20px;
+    }
+    .parking .second-part{
+        flex-direction: column-reverse;
+    }
+    .figura2{
+        width: 300px;
+        height: 209.34px;
+    }
+    .figura2:hover > .capa1 h2{
+        margin-top: 25px;
+    }
+    .figura2 .capa1 h2{
+        font-size: 22px;
+    }
+    .figura2 .capa1 p{
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 250px;
+    }
+    .parking .losdescalzos1 .mapa-1 iframe{
+        width: 300px;
+        height: 140.67px;
+    }
+    .losdescalzos1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .losdescalzos1 h3{
+        font-size: 18px;
+    }
+    .losdescalzosangel1{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .losdescalzosangel1 h3{
+        font-size: 18px;
+    }
+    .parking .losdescalzosangel1 .mapa-2 iframe{
+        width: 300px;
+        height: 140.67px;
+    }
+    /*------TERCERA PARTE-----*/
+    .transport{
+        padding-top: 20px;
+        background:  rgba(202, 202, 202, 0.3);
+        border-radius: 6px;
+        padding-bottom: 20px;
+    }
+    .transport .third-part{
+        display: initial;
+    }
+    .transport .figura3{
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 300px;
+        height: auto;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 20px;
+    }
+    .transport .taxi .mapa-1 iframe{
+        width: 300px;
+        height: 125px;
+    }
+    .taxi h3{
+        font-size: 18px;
+    }
+    .transport .bus{
+        padding-left: 0;
+    }
+    .transport .bus .mapa-2{
+        margin-right: 0;
+    }
+    .transport .bus .mapa-2 iframe{
+        width: 300px;
+        height: 125px;
+    }
+    .bus h3{
+        font-size: 18px;
+    }
+    .transport .bus{
+        padding-left: 0;
+    }
+    .transport .train {
+        margin-left: 0;
+    }
+    .transport .train .mapa-3 iframe{
+        width: 300px;
+        height: 125px;
+    } 
+    .train h3{
+        font-size: 18px;
+    }
+    .transport .taxi .mapa-1{
+        margin-right: 0px;
+    }
+    .figura3:hover > .capa2 h2{
+        margin-top: 12px;
+    }
+    .figura3 .capa2 h2{
+        font-size: 22px;
+    }
+    .figura3 .capa2 p{
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 230px;
+    }
+    .transport .taxi{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .third-part-junior{
+        display: initial;
+    }
+    .third-part-junior-junior{
+        display: initial;
+    }
+}
+
+
+
+/*------ANIMACIÓN-----*/
+[data-animation="fade"] {
+    opacity: 0;
+    transform: translate(100%);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: translate(0);
+}
+[data-animation="show"] {
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: scale(1);
+}
+[data-animation="up"] {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: translateY(0);
+}
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}

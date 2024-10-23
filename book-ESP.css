@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Glass Antiqua', monospace;
+    font-weight: lighter;
+}
+
+body{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(https://multimedia.andalucia.org/media/30C5694873514DF5BFE17164EAF1B940/img/6579727AE9E04C3F9D54CF4E656A8669/1637326181018Foto_puente_14_00311996055062580443111.jpg?responsive);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    margin-top: 30px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo img{
+    width: 350px;
+    height: auto;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #efb810;
+    position: relative;
+}
+
+.columna{
+    margin: 0 200px;
+    position: relative;
+}
+.columna .dentro{
+    position: relative;
+}
+.columna .dentro1{
+    position: relative;
+}
+.columna h2{
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.columna .reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.columna .reserva .booking,
+.columna .reserva .airbnb{
+    margin: 0 50px;
+    color: rgb(0, 0, 0);
+    background-color: #efb810;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.columna .reserva .booking a,
+.columna .reserva .airbnb a{
+    text-decoration: none;
+    color: black;
+}
+
+.columna .reserva .booking:hover,
+.columna .reserva .airbnb:hover{
+    scale: 1.15;
+}
+.columna .reserva .booking a:hover,
+.columna .reserva .airbnb a:hover{
+    color: #ffffff;
+}
+
+
+.columna .reserva .booking{
+    width: 400px;
+}
+
+/*-----DROPDOWN MENU-----*/
+.englobo{
+    display: inline-flex;
+}
+.dropdown{
+    display: none;
+    margin-top: 30px;
+    height: 60px;
+    position: relative;
+}
+.dropdown button{
+    background-color: #efb810;
+    color: #000000;
+    padding: 5px 20px;  
+    font-size: 20px;  
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: #efb810;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.dropdown .content{
+    background: black;
+    position: absolute;
+    box-shadow: 2px 2px 5px #252525;
+    display: none;
+    width: 400px;
+    z-index: 999;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: #b88e0e;
+}
+.dropdown a:hover{
+    background: #252525;
+}
+
+/*----------CARRUSEL 1----------*/
+.container-carousel{
+    margin-top: 100px;
+    width: 500px;
+    height: 667px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carruseles{
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+.slider-section{
+    width: calc(100% / 10);
+    height: 100%;
+}
+.slider-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-right{
+    right: 10px;
+    color: black;
+}
+.btn-left{
+    left: 10px;
+    color: black;
+}
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #333333d4;
+    color: rgb(255, 255, 255);
+}
+
+/*----------CARRUSEL DE IMÁGENES 2---------*/
+.container-carousel1{
+    margin-top: 100px;
+    width: 500px;
+    height: 667px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carruseles1{
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+.slider-section1{
+    width: calc(100% / 10);
+    height: 100%;
+}
+.slider-section1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.btn-left1,
+.btn-right1 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-right1{
+    right: 10px;
+    color: black;
+}
+.btn-left1{
+    left: 10px;
+    color: black;
+}
+.btn-left1:hover,
+.btn-right1:hover{
+    background-color: #333333d4;
+    color: rgb(255, 255, 255);
+}
+
+/*-----FOOTER-----*/
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 105px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #efb810;
+    font: 22px;
+    margin: 0 10px;
+
+}
+
+.footer hr{
+    background: #efb810;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0px;
+}
+
+.footer p{
+    padding-bottom: 15px;
+    color: #efb810;
+}
+
+/*----------VERSIÓN MEDIA---------*/
+@media only screen and (max-width: 1415px){
+    .columna{
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .contenedor{
+        display: initial;
+    }
+    .columna{
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dropdown{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .columna{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .titulo{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-carousel{
+        width: 250px;
+        height: 333px;
+    }
+    .container-carousel1{
+        width: 250px;
+        height: 333px;
+    }
+    .columna h2{
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .columna .reserva{
+        max-width: 374px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+    .columna .reserva .booking,
+    .columna .reserva .airbnb{
+        font-size: 20px;
+    }
+
+    .columna .reserva .booking:hover,
+    .columna .reserva .airbnb:hover{
+        color: #ffffff;
+        scale: 1.15;
+    }
+    .footer{
+        padding: 0 50px;
+        width: auto;
+    }
+} 
+
+@media only screen and (max-width: 379px){
+    .columna .reserva{
+        display: flex;
+    }
+    .logo {
+        width: 100vw; /* Ancho igual al ancho del viewport */
+        max-width: 100%; /* La imagen no será más ancha que el contenedor */
+        overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    }
+    
+    .logo img{
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+        height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+        transition: width 0.5s ease; /* Transición suave de 0.5 segundos para el cambio de tamaño */
+    }
+}
+
+
+/*------ANIMACIÓN-----*/
+[data-animation="fade"] {
+    opacity: 0;
+    transform: translate(100%);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: translate(0);
+}
+[data-animation="show"] {
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: scale(1);
+}
+[data-animation="up"] {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .6s ease-in .3s;
+  
+    --opacity: 1;
+    --transform: translateY(0);
+}
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}

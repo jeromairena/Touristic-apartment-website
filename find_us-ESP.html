@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find us</title>
+    <link rel="stylesheet" href="find_us-ESP.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Glass+Antiqua&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/002acb82be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!---BARRA DE NAVEGACIÓN-->
+    <nav id="navBar" class="navbar-white">
+        <a href="web-ESP.html"><img src="logocabecera.png" class="logo" ></a>
+        <ul class="nav-links">
+            <li><a  href="find_us-ESP.html" class="active">Encuéntranos</a></li>
+            <li><a  href="gallery-ESP.html">Galería</a></li>
+        </ul>
+        <a href="book-ESP.html" class="register-btn">Reserva</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+<!--DROPDOWN MENU-->
+
+    <div class="dropdown">
+        <button>Seleccione</button>
+        <div class="content">
+            <a href="#interactive_map">Nuestros mapas interactivos</a>
+            <a href="#our_location">Donde estamos?</a>
+            <a href="#free_parking">Plazas privadas de parking gratuitas</a>
+            <a href="#public_transport">Transporte público</a>
+        </div>
+    </div>
+
+<!--CONTAINER-->
+<div class="container">
+    <div class="centrar">
+        <div class="figura">
+            <img src="terraza.jpg" class="hero__img" data-animation="up">
+            <div class="capa4">
+                <h2 id="interactive_map">Nuestras guías y mapas interactivos</h2>
+                <p>Siempre tratamos de ofrecer el mejor servicio a nuestros huéspedes, y facilitar su visita al máximo. 
+                    Es por eso que hemos creado tres guías con toda la información que necesita saber sobre Ronda y sus alrededores, 
+                    además de mapas interactivos donde puedes localizar todos los sitios que le recomendamos visitar. 
+                    Reserva con nosotros y descubre Ronda, y la provincia de Málaga. </p>
+            </div>
+        </div>
+    </div>
+    <div class="location">
+        <div class="first-part"> 
+            <div class="centrar"> 
+                <div class="figura1">
+                    <img src="location.jpg" class="hero__img" data-animation="up">
+                    <div class="capa">
+                        <h2 id="our_location">Donde estamos?</h2>
+                        <p>Nuestros apartamentos están situados justo en el centro de la ciudad, 
+                            a un par de metros de la calle principal (Calle de La Bola), 
+                            a 10 minutos del centro histórico, y cerca de todo lo que necesite.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="losdescalzos">
+                <h3>Los Descalzos</h3>
+                <div class="mapa-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.0980516156815!2d-5.164665823710772!3d36.744217472263124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d317e31b8a6b7%3A0x6a3337fc6d61123e!2sApartamentos%20los%20Descalzos!5e0!3m2!1ses!2ses!4v1712908996809!5m2!1ses!2ses" 
+                    width="400" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                </div>
+            </div>
+            <div class="losdescalzosangel">
+                <h3>Los Descalzos Ángel</h3>
+                <div class="mapa-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.0962442052623!2d-5.163219844334544!3d36.74426085809394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d3145e9fe2a93%3A0x882c7b4952a54626!2sApartamentos%20los%20Descalzos%20%C3%81ngel!5e0!3m2!1ses!2ses!4v1712908891678!5m2!1ses!2ses" 
+                    width="400" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                </div>
+            </div>
+            
+        </div>     
+    </div>
+    <div class="parking">
+        <div class="second-part">
+            <div class="losdescalzos1">
+                <h3>Los Descalzos</h3>
+                <div class="mapa-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3197.0509305190885!2d-5.163604023710716!3d36.745348572262806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd0d3148983f93bd%3A0x2eb8b530861ca842!2sParking%20Mart%C3%ADnez%20Astein%2C%20Avenida%20Mart%C3%ADnez%20Astein%2C%20Ronda!3m2!1d36.7459896!2d-5.1599673!4m5!1s0xd0d317e31b8a6b7%3A0x6a3337fc6d61123e!2sApartamentos%20los%20Descalzos%2C%20C.%20Mar%C3%ADa%20Cabrera%2C%2033%2C%2029400%20Ronda%2C%20M%C3%A1laga!3m2!1d36.7442175!2d-5.1620909!5e0!3m2!1ses!2ses!4v1712909173632!5m2!1ses!2ses" 
+                    width="400" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                </div>
+            </div>
+            <div class="losdescalzosangel1">
+                <h3>Los Descalzos Ángel</h3>
+                <div class="mapa-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3197.0505139182133!2d-5.1638729737107365!3d36.745358572262774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd0d3148983f93bd%3A0x2eb8b530861ca842!2sParking%20Mart%C3%ADnez%20Astein%2C%20Avenida%20Mart%C3%ADnez%20Astein%2C%20Ronda!3m2!1d36.7459896!2d-5.1599673!4m5!1s0xd0d3145e9fe2a93%3A0x882c7b4952a54626!2sApartamentos%20los%20Descalzos%20%C3%81ngel%2C%20Calle%20%C3%81ngel%2C%20Ronda!3m2!1d36.744217899999995!2d-5.1621255!5e0!3m2!1ses!2ses!4v1712909252527!5m2!1ses!2ses" 
+                    width="400" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                </div>
+            </div>
+            <div class="centrar">
+                <div class="figura2">
+                    <img src="parking.jpg" class="hero__img" data-animation="up">
+                    <div class="capa1">
+                        <h2 id="free_parking">Plazas de parking gratuitas</h2>
+                        <p>Si viene en coche a Ronda, no se preocupe por dónde aparcar, le ofrecemos una plaza de aparcamiento gratuita en Parking Martínez Astein, 
+                            situado en el centro de Ronda, a tan solo 5 minutos de los apartamentos.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transport">  
+        <div class="third-part">
+            <div class="centrar">
+                <div class="figura3">
+                    <img src="transporte.png" class="hero__img" data-animation="up">
+                    <div class="capa2">
+                        <h2 id="public_transport">Transporte público</h2>
+                        <p>Si no viene en coche, 
+                            le mostramos la distancia desde los apartamentos hasta los principales puntos de transporte público de la ciudad. 
+                            Para evitar la repetición, 
+                            tomaremos como referencia un solo apartamento.</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="third-part-junior">
+                <div class="third-part-junior-junior">
+                    <div class="taxi">
+                        <h3>Parada de taxis</h3>
+                        <div class="mapa-1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3197.10163845035!2d-5.165131723710809!3d36.74413137226314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd0d3145e9fe2a93%3A0x882c7b4952a54626!2sApartamentos%20los%20Descalzos%20%C3%81ngel%2C%20Calle%20%C3%81ngel%2C%20Ronda!3m2!1d36.744217899999995!2d-5.1621255!4m5!1s0xd0d314818e681ab%3A0x4186ea2859cee229!2sTaxi%209%20Ronda%2C%20Calle%20Juan%20Jos%C3%A9%20de%20Puya%2C%20Ronda!3m2!1d36.7440171!2d-5.162935699999999!5e0!3m2!1ses!2ses!4v1712909573342!5m2!1ses!2ses" 
+                            width="384" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                        </div>
+                    </div>
+                    <div class="bus">
+                        <h3>Estación de autobuses</h3>
+                        <div class="mapa-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1598.5276873888615!2d-5.1651205110912715!3d36.74524189306575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd0d3145e9fe2a93%3A0x882c7b4952a54626!2sApartamentos%20los%20Descalzos%20%C3%81ngel%2C%20Calle%20%C3%81ngel%2C%20Ronda!3m2!1d36.744217899999995!2d-5.1621255!4m5!1s0xd0d31649f39dde5%3A0xafc4b866fa45d2e0!2sEstaci%C3%B3n%20de%20Autobuses%20de%20Ronda%2C%20Calle%20de%20Jos%C3%A9%20Mar%C3%ADa%20Castell%C3%B3%20Madrid%2C%20Ronda!3m2!1d36.7468369!2d-5.165617999999999!5e0!3m2!1ses!2ses!4v1712909649585!5m2!1ses!2ses" 
+                            width="384" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="train">
+                    <h3>Estación de tren</h3>
+                    <div class="mapa-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3197.0109488892094!2d-5.164726173710671!3d36.74630827226254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd0d3145e9fe2a93%3A0x882c7b4952a54626!2sApartamentos%20los%20Descalzos%20%C3%81ngel%2C%20Calle%20%C3%81ngel%2C%20Ronda!3m2!1d36.744217899999995!2d-5.1621255!4m5!1s0xd0d3149acdcd91f%3A0xe11be5a96dd5bcde!2sEstac%C3%ADon%20de%20Ronda%20Adif%2C%20Avenida%20Victoria%2C%20Ronda!3m2!1d36.748407199999995!2d-5.1619847!5e0!3m2!1ses!2ses!4v1712909702998!5m2!1ses!2ses" 
+                        width="810" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hero__img" data-animation="show"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="find_us-ESP.js"></script>
+
+</div>
+<!--FOOTER-->
+<div class="footer">
+    <a href="https://www.instagram.com/aptos.losdescalzosangel/" class="fa fa-instagram" aria-hidden="true"></a>
+    <a href="mailto:aptos.losdescalzosangel@gmail.com" class="fa fa-envelope" aria-hidden="true"></a>            
+    <a href="https://maps.app.goo.gl/dyMv7N6N7eVH7Z6Q7" class="fa fa-map-marker" aria-hidden="true"></a>
+    <hr>
+    <p>&copy; 2024 <b>Apartamentos Los Descalzos Ángel</b><br>-Todos los derechos reservados</p>
+</div>
+<script>
+    var navBar = document.getElementById("navBar");
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+
+</body>
+</html>
