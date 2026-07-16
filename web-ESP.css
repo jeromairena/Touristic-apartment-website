@@ -491,7 +491,8 @@ section#hero{
 
 .site-header {
     height: auto;
-    padding: 1rem clamp(1rem, 4vw, 4rem);
+    padding: 0.35rem clamp(1rem, 4vw, 4rem);
+    min-height: 72px;
     background: rgba(21, 21, 21, 0.95);
     border-radius: 0;
     position: sticky;
@@ -506,6 +507,14 @@ section#hero{
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+    min-height: 64px;
+}
+
+.brand {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
 }
 
 .brand img {
