@@ -14,6 +14,8 @@
   <link rel="canonical" href="/index-en.html">
   <link rel="alternate" hreflang="es" href="/index.html">
   <link rel="alternate" hreflang="en" href="/index-en.html">
+  <link rel="alternate" hreflang="de" href="/index-de.html">
+  <link rel="alternate" hreflang="fr" href="/index-fr.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Kode+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -35,7 +37,15 @@
         <li><a href="#apartments">Apartments</a></li>
         <li><a href="gallery-ESP.html">Gallery</a></li>
         <li><a href="find_us-ESP.html">Location</a></li>
-        <li><a href="index.html" hreflang="es" lang="es">Español</a></li>
+        <li class="language-switcher">
+          <label class="sr-only" for="language-select">Select language</label>
+          <select id="language-select" data-language-switcher aria-label="Select language">
+              <option value="index.html" lang="es">Español</option>
+              <option value="index-en.html" lang="en" selected>English</option>
+              <option value="index-de.html" lang="de">Deutsch</option>
+              <option value="index-fr.html" lang="fr">Français</option>
+          </select>
+        </li>
         <li><a href="#booking" class="nav-cta">Book direct</a></li>
       </ul>
     </nav>
@@ -99,7 +109,7 @@
         <h2 id="booking-title">Request availability</h2>
         <p>Send us your dates and preferences. We will reply directly by email to confirm availability and booking conditions.</p>
       </div>
-      <form name="booking-request-en" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html" class="booking-form">
+      <form name="booking-request-en" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias-en.html" class="booking-form">
         <input type="hidden" name="form-name" value="booking-request-en">
         <p class="hidden"><label>Do not fill this in: <input name="bot-field"></label></p>
         <label>Full name<input type="text" name="name" autocomplete="name" required></label>

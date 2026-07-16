@@ -33,3 +33,16 @@ if (navToggle && primaryMenu) {
         navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
     });
 }
+
+
+const languageSwitcher = document.querySelector('[data-language-switcher]');
+
+if (languageSwitcher) {
+    languageSwitcher.addEventListener('change', (event) => {
+        const nextPage = event.target.value;
+
+        if (nextPage) {
+            window.location.href = nextPage;
+        }
+    });
+}

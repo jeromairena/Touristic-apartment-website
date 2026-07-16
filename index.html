@@ -14,6 +14,8 @@
   <link rel="canonical" href="/">
   <link rel="alternate" hreflang="es" href="/index.html">
   <link rel="alternate" hreflang="en" href="/index-en.html">
+  <link rel="alternate" hreflang="de" href="/index-de.html">
+  <link rel="alternate" hreflang="fr" href="/index-fr.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Kode+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -32,10 +34,18 @@
         <span></span><span></span><span></span>
       </button>
       <ul id="primary-menu" class="nav-links">
-        <li><a href="#apartamentos">Apartamentos</a></li>
+        <li><a href="#apartments">Apartamentos</a></li>
         <li><a href="gallery-ESP.html">Galería</a></li>
         <li><a href="find_us-ESP.html">Ubicación</a></li>
-        <li><a href="index-en.html" hreflang="en" lang="en">English</a></li>
+        <li class="language-switcher">
+          <label class="sr-only" for="language-select">Seleccionar idioma</label>
+          <select id="language-select" data-language-switcher aria-label="Seleccionar idioma">
+              <option value="index.html" lang="es" selected>Español</option>
+              <option value="index-en.html" lang="en">English</option>
+              <option value="index-de.html" lang="de">Deutsch</option>
+              <option value="index-fr.html" lang="fr">Français</option>
+          </select>
+        </li>
         <li><a href="#reserva" class="nav-cta">Reservar directo</a></li>
       </ul>
     </nav>
@@ -63,7 +73,7 @@
       </div>
     </section>
 
-    <section id="apartamentos" class="apartments-section" aria-labelledby="apartments-title">
+    <section id="apartments" class="apartments-section" aria-labelledby="apartments-title">
       <p class="eyebrow">Elige tu estancia</p>
       <h2 id="apartments-title">Apartamentos preparados para escapadas a Ronda</h2>
       <div class="apartment-grid">
